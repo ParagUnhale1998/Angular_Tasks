@@ -1,0 +1,73 @@
+.circleContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+
+    .detailContainer{
+        color: #fff;
+        font-weight: 600;
+        font-size: 2vw;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // flex-direction: column;
+        gap: 10px;
+        // border: 1px solid black;
+
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+    }
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    background-color: #2ae71c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #2ae71c;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .circle:hover {
+    background-color: #1def0e;
+    transform: scale(1.1);
+  }
+.circles{
+    background-color: #e7e41c;
+    border: 1px solid #0e0e0e;
+
+}
+  .circles.selected {
+    background-color: #e74c3c;
+  }
+ 
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+  }
+  

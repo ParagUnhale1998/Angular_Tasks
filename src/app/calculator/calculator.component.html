@@ -1,0 +1,13 @@
+<div id="calculator-container">
+    <div id="calculator">
+      <h1 id="heading">calculator</h1>
+      <input type="text" name="" id="display" [(ngModel)]="display" disabled placeholder="Enter the values" />
+      <br />
+      <button *ngFor="let btn of ['AC', '.', '/', 'DE']" (click)="onButtonClick(btn)" class="operator">{{ btn }}</button>
+      <br />
+      <div *ngFor="let row of [['7', '8', '9', '*'], ['4', '5', '6', '-'], ['1', '2', '3', '+'], ['00', '0', '=']]" >
+        <button *ngFor="let btn of row" (click)="onButtonClick(btn)">{{ btn }}</button>
+      </div>
+    </div>
+  </div>
+  

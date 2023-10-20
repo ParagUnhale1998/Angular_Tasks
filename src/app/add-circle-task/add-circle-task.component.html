@@ -1,0 +1,15 @@
+<div class="circleContainer">
+    <button (click)="addCircle()" class="circle">Add Circle</button>
+    <div class="detailContainer">
+        <p>Total Circles: {{ circles.length }}</p>
+        <p>Selected Circles: {{ getSelectedCircleCount() }}</p>
+    </div>
+    <ul>
+      <li *ngFor="let circle of circles; let i = index">
+        <div class="circle circles"  [class.selected]="circle.selected" (click)="toggleCircleSelection(i)"></div>
+        <input type="checkbox" [checked]="circle.selected" (change)="toggleCircleSelection(i)">
+      </li>
+    </ul>
+   
+  </div>
+  
