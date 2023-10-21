@@ -9,6 +9,9 @@ import { UIChangeComponent } from './ui-change/ui-change.component';
 import { AddCircleTaskComponent } from './add-circle-task/add-circle-task.component';
 import { ShoppingAppUIComponent } from './shopping-app-ui/shopping-app-ui.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ShoppingAddItemComponent } from './shopping-add-item/shopping-add-item.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -16,13 +19,16 @@ import { HttpClientModule } from '@angular/common/http';
     CalculatorComponent,
     UIChangeComponent,
     AddCircleTaskComponent,
-    ShoppingAppUIComponent
+    ShoppingAppUIComponent,
+    ShoppingAddItemComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
