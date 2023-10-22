@@ -44,4 +44,16 @@ export class ShoppingAddItemComponent {
   updateTotalPrice(){
     this.calculateTotalPrice()
   }
+
+  increaseQuantity(item: any) {
+    item.quantity++;
+    this.updateTotalPrice();
+  }
+  
+  decreaseQuantity(item: any) {
+    if (item.quantity > 1) {
+      item.quantity--;
+      this.updateTotalPrice();
+    }
+  }
 }

@@ -13,6 +13,9 @@
 
 
 }
+h2{
+    text-align: center;
+}
 .container{
     display: flex;
     align-items: flex-start;
@@ -114,6 +117,7 @@ h1{
 
 }
 .allProductsContainer{
+    margin: 0 auto;
     background: #fff;
     display: flex;
     align-items: flex-start;
@@ -130,6 +134,7 @@ h1{
         flex-wrap: wrap;
         gap: 10px;
         padding: 10px;
+        // margin: 0 auto;
 
         li{
             list-style: none;
