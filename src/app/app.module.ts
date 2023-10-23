@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ShoppingAddItemComponent } from './shopping-add-item/shopping-add-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { RestaurantListComponent } from './restaurant-list/restaurant-list.component';
+import { RestaurantDetailsComponent } from './restaurant-details/restaurant-details.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     AddCircleTaskComponent,
     ShoppingAppUIComponent,
     ShoppingAddItemComponent,
+    RestaurantListComponent,
+    RestaurantDetailsComponent,
   ],
   imports: [
     BrowserModule,
