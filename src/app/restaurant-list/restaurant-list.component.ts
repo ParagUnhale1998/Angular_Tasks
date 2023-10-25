@@ -18,7 +18,10 @@ export class RestaurantListComponent {
     });
   }
 
-  NavigateToDetails(id:any){
+//   NavigateToDetails(id:any){
+// this.router.navigateByUrl(`/restaurant/${id}`)
+//   }
+   NavigateToDetails(id:any){
 this.router.navigateByUrl(`/restaurant/${id}`)
   }
 }
