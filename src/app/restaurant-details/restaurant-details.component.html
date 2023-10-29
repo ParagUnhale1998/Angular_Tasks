@@ -1,6 +1,41 @@
-<div *ngIf="restaurant">
-    <h2>{{ restaurant.name }}</h2>
+<h2>Restaurants Details</h2>
+<!-- <div *ngIf="restaurant" class="restaurants">
+    <h3>{{ restaurant.name }}</h3>
     <img [src]="restaurant.image" alt="{{ restaurant.name }}" />
     <p>{{ restaurant.description }}</p>
+  </div> -->
+  <!-- hotel-details.component.html -->
+
+<div class="hotel-details">
+  <h1 class="hotel-name">{{ hotel.name }}</h1>
+  <p class="hotel-location">{{ hotel.location }}</p>
+  <p class="hotel-cuisine">{{ hotel.cuisine }}</p>
+  <p class="hotel-rating">Rating: {{ hotel.rating }}</p>
+
+  <img class="hotel-image" [src]="hotel.image" alt="Hotel Image">
+
+  <p class="hotel-description">{{ hotel.description }}</p>
+
+  <h2 class="section-heading">Menu</h2>
+  <div class="menu-items">
+    <div *ngFor="let item of hotel.menu" class="menu-item">
+      <img [src]="item.image" alt="{{ item.dish }}">
+      <h3>{{ item.dish }}</h3>
+      <p class="item-description">{{ item.description }}</p>
+      <p class="item-price">Price: ${{ item.price.toFixed(2) }}</p>
+    </div>
   </div>
-  
+
+  <!-- <h2 class="section-heading">Opening Hours</h2>
+  <div class="opening-hours">
+    <ul>
+      <li *ngFor="let day of Object.keys(hotel.opening_hours)">
+        <strong>{{ day }}:</strong> {{ hotel.opening_hours[day] }}
+      </li>
+    </ul>
+  </div> -->
+
+  <h2 class="section-heading">Contact Information</h2>
+  <p class="contact-phone">Phone: {{ hotel.contact.phone }}</p>
+  <p class="contact-email">Email: {{ hotel.contact.email }}</p>
+</div>

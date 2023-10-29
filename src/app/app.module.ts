@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { RestaurantListComponent } from './restaurant-list/restaurant-list.component';
 import { RestaurantDetailsComponent } from './restaurant-details/restaurant-details.component';
+import { AngularTableComponent } from './angular-table/angular-table.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { RestaurantDetailsComponent } from './restaurant-details/restaurant-deta
     ShoppingAddItemComponent,
     RestaurantListComponent,
     RestaurantDetailsComponent,
+    AngularTableComponent,
   ],
   imports: [
     BrowserModule,

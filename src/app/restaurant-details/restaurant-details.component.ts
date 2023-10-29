@@ -8,7 +8,7 @@ import { RestaurantService } from '../services/restaurant.service';
   styleUrls: ['./restaurant-details.component.scss']
 })
 export class RestaurantDetailsComponent {
-  restaurant: any;
+  hotel: any;
 
   constructor(private route: ActivatedRoute, private restaurantService: RestaurantService) {}
 
@@ -20,8 +20,8 @@ export class RestaurantDetailsComponent {
       // Now you have the restaurant ID, and you can fetch details, etc.
       if (id !== undefined) {
         this.restaurantService.getRestaurantById(id).subscribe((data) => {
-          this.restaurant = data;
-          console.log(this.restaurant);
+          this.hotel = data;
+          console.log(this.hotel);
         });
       }
     });
