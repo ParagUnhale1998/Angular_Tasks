@@ -1,0 +1,18 @@
+<h1>Sorted User Big Data </h1>
+
+<div *ngIf="loading" class="loading-indicator">
+    <p>Loading...</p>
+</div>
+
+<div class="user-container">
+    <div *ngFor="let user of users" class="user-card">
+        <img [src]="user.image" alt="{{ user.username }} Image" class="user-image">
+        <div class="user-details">
+            <h3>{{ user.username }}</h3>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="error" class="error-message">
+    <p>{{ error }}</p>
+  </div>

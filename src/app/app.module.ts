@@ -15,6 +15,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { RestaurantListComponent } from './restaurant-list/restaurant-list.component';
 import { RestaurantDetailsComponent } from './restaurant-details/restaurant-details.component';
 import { AngularTableComponent } from './angular-table/angular-table.component';
+import { CollegeBigDataComponent } from './college-big-data/college-big-data.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AngularTableComponent } from './angular-table/angular-table.component';
     RestaurantListComponent,
     RestaurantDetailsComponent,
     AngularTableComponent,
+    CollegeBigDataComponent,
   ],
   imports: [
     BrowserModule,

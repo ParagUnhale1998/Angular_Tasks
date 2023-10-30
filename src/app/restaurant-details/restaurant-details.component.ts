@@ -14,7 +14,7 @@ export class RestaurantDetailsComponent {
 
   ngOnInit(): void {
     // const id = this.route.snapshot.paramMap.get('id');
-
+    
     this.route.paramMap.subscribe((params) => {
       const id = +params.get('id')!;
       // Now you have the restaurant ID, and you can fetch details, etc.

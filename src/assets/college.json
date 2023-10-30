@@ -1,0 +1,75 @@
+{
+    "colleges": [
+      {
+        "name": "Sunshine University",
+        "location": "City U, Country Z",
+        "establishedYear": 2000,
+        "courses": ["Artificial Intelligence", "Biochemistry", "Communication"],
+        "image": "https://example.com/sunshine-university.jpg"
+      },
+      {
+        "name": "City Tech Institute",
+        "location": "City V, Country X",
+        "establishedYear": 1998,
+        "courses": ["Information Technology", "Physics", "Marketing"],
+        "image": "https://example.com/city-tech-institute.jpg"
+      },
+      {
+        "name": "Metro College",
+        "location": "City W, Country Y",
+        "establishedYear": 2015,
+        "courses": ["Digital Media", "Chemical Engineering", "Public Health"],
+        "image": "https://example.com/metro-college.jpg"
+      },
+      {
+        "name": "Greenfield University",
+        "location": "City X, Country Z",
+        "establishedYear": 2007,
+        "courses": ["Environmental Engineering", "Finance", "Psychology"],
+        "image": "https://example.com/greenfield-university.jpg"
+      },
+      {
+        "name": "Harbor College",
+        "location": "City Y, Country X",
+        "establishedYear": 1995,
+        "courses": ["Marine Biology", "Business Analytics", "Political Science"],
+        "image": "https://example.com/harbor-college.jpg"
+      },
+      {
+        "name": "Tech Innovators Institute",
+        "location": "City Z, Country Y",
+        "establishedYear": 2010,
+        "courses": ["Robotics", "Data Science", "Creative Writing"],
+        "image": "https://example.com/tech-innovators-institute.jpg"
+      },
+      {
+        "name": "Unity College",
+        "location": "City AA, Country X",
+        "establishedYear": 2003,
+        "courses": ["Unity Game Development", "Graphic Design", "Education"],
+        "image": "https://example.com/unity-college.jpg"
+      },
+      {
+        "name": "Oceanfront University",
+        "location": "City BB, Country Z",
+        "establishedYear": 2018,
+        "courses": ["Maritime Engineering", "International Relations", "Film Studies"],
+        "image": "https://example.com/oceanfront-university.jpg"
+      },
+      {
+        "name": "Evergreen Institute",
+        "location": "City CC, Country Y",
+        "establishedYear": 2006,
+        "courses": ["Environmental Studies", "Business Management", "Psychiatry"],
+        "image": "https://example.com/evergreen-institute.jpg"
+      },
+      {
+        "name": "Infinite Learning Hub",
+        "location": "City DD, Country X",
+        "establishedYear": 2011,
+        "courses": ["Infinity Mathematics", "Advanced AI", "Journalism"],
+        "image": "https://example.com/infinite-learning-hub.jpg"
+      }
+    ]
+  }
+  
