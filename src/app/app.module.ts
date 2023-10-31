@@ -16,6 +16,7 @@ import { RestaurantListComponent } from './restaurant-list/restaurant-list.compo
 import { RestaurantDetailsComponent } from './restaurant-details/restaurant-details.component';
 import { AngularTableComponent } from './angular-table/angular-table.component';
 import { CollegeBigDataComponent } from './college-big-data/college-big-data.component';
+import { FoodRecipeAppModule } from './food-recipe-app/food-recipe-app.module';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { CollegeBigDataComponent } from './college-big-data/college-big-data.com
     HttpClientModule,
     BrowserAnimationsModule,
     MatGridListModule
+,FoodRecipeAppModule
   ],
   providers: [],
   bootstrap: [AppComponent]

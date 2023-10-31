@@ -16,6 +16,11 @@ import { FoodHomeComponent } from './food-home/food-home.component';
   imports: [
     CommonModule,
     FoodRecipeAppRoutingModule
+  ],
+  exports:[
+    FoodhomeComponent,
+    FoodDetailComponent,
+    FoodHomeComponent
   ]
 })
 export class FoodRecipeAppModule { }
