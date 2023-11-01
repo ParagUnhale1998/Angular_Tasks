@@ -1,4 +1,94 @@
-<div class="container">
-    <input type="text" placeholder="type a dish name">
-    <button>Search</button>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav><!-- Search container -->
+<div class="container my-3">
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Type a dish name" #recipiName>
+        <div class="input-group-append">
+            <button class="btn btn-danger" type="button" (click)="getRecipiDetails(recipiName.value)">Search</button>
+        </div>
+    </div>
+</div>
+<!-- Meal cards container -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let meal of allRecipies">
+            <div class="card mb-4">
+                <img [src]="meal.strMealThumb" class="card-img-top" alt="{{ meal.strMeal }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ meal.strMeal }}</h5>
+                    <p class="card-text">{{ meal.strCategory }}, {{ meal.strArea }}</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#MealDetailModel">
+                        Meal Recipe Details
+                      </button>
+                      <div class="modal fade" id="MealDetailModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">{{ meal.strMeal }}</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="card-text">{{ meal.strInstructions }}</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">{{ meal.strIngredient1 }}</li>
+                        <li class="list-group-item">{{ meal.strIngredient2 }}</li>
+                        <li class="list-group-item">{{ meal.strIngredient3 }}</li>
+                        <li class="list-group-item">{{ meal.strIngredient4 }}</li>
+                        <li class="list-group-item">{{ meal.strIngredient5 }}</li>
+                        <li class="list-group-item">{{ meal.strIngredient6 }}</li>
+                        <li class="list-group-item">{{ meal.strIngredient7 }}</li>
+                    </ul>
+                    <p class="card-text">Tags: {{ meal.strTags }}</p>
+                    <a href="{{ meal.strSource }}" class="btn btn-primary" target="_blank">Recipe Source</a>
+                </div>
+                <div class="card-footer">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" [src]="getVideoUrl(meal.strYoutube)" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

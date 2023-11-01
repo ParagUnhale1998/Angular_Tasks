@@ -1,3 +1,43 @@
 :host{
     background: #f4c531;
 }
+/* meal-card.component.scss */
+.meal-card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    text-align: center;
+  
+    img {
+      max-width: 100%;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+  
+    p {
+      margin-bottom: 12px;
+    }
+  
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 12px;
+    }
+  
+    li {
+      margin-bottom: 4px;
+    }
+  
+    a {
+      color: #007bff;
+      text-decoration: none;
+      display: block;
+    }
+  }
+  
